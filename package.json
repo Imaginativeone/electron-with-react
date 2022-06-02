@@ -17,7 +17,7 @@
   "license": "MIt",
   "devDependencies": {
     "electron": "^19.0.1",
+    "electron-compile": "^3.3.6",
     "nodemon": "^2.0.0"
-  },
-  "dependencies": {}
+  }
 }
