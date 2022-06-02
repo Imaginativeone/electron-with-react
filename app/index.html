@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- !! IMPORTANT !! -->
+    <!-- Content-Security-Policy no longer required. Will show warning in devtools. Can be ignored -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
+    <title>Bookmarker</title>
+    <style>
+      /* html { font-family: sans-serif; background: #2B2E3B; color: #9FEAF9; } */
+    </style>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+  </head>
+  <body>
+    <h1>Bookmarker</h1>
+    
+    <div class="error-message"></div>
+
+    <section class="add-new-link">
+      <form class="new-link-form">
+        <input type="url" class="new-link-url" placeholder="URL" size="100" required>
+        <input type="submit" value="Submit" class="new-link-submit" disabled>
+      </form>
+    </section>
+
+    <section class="links"></section>
+
+    <section class="controls">
+      <button class="clear-storage">Clear Storage</button>
+    </section>
+
+    <script>
+      // You can also require other files to run in this process
+      require('../renderer/renderer.js');
+      // alert(__dirname); // This totally works
+    </script>
+  </body>
+</html>
